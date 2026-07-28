@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about the PHYWIX mission, values, journey, and contact options." />
+    <title>PHYWIX — About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+      <div class="loading-shell">
+        <div class="loading-orb"></div>
+        <p>Opening PHYWIX profile</p>
+      </div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark"></span><span>PHYWIX</span></a>
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Project Hub</a>
+        <a href="knowledge.html">Knowledge Hub</a>
+        <a href="about.html" class="active">About</a>
+      </nav>
+      <button class="icon-button theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+    </header>
+
+    <main id="top">
+      <section class="page-hero section">
+        <div class="page-hero-copy reveal" data-reveal>
+          <p class="eyebrow">About PHYWIX</p>
+          <h1>A deliberate brand for thoughtful product engineering.</h1>
+          <p>PHYWIX exists to make technology feel more useful, more human, and more beautifully executed.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" data-reveal>
+        <div class="about-grid">
+          <div class="glass-panel about-card">
+            <p class="eyebrow">Mission</p>
+            <h2>Build systems that help people think faster and work better.</h2>
+            <p>We create reliable software and educational experiences that combine clarity, performance, and thoughtful design.</p>
+          </div>
+          <div class="glass-panel about-card">
+            <p class="eyebrow">Vision</p>
+            <h2>Turn technical depth into practical advantage for ambitious teams.</h2>
+            <p>PHYWIX aims to make advanced topics like AI, databases, and machine learning feel approachable and implementable.</p>
+          </div>
+          <div class="glass-panel about-card">
+            <p class="eyebrow">Core Values</p>
+            <ul class="value-list">
+              <li>Clarity over noise</li>
+              <li>Craft over speed</li>
+              <li>Systems thinking</li>
+              <li>Accessible education</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" data-reveal>
+        <div class="founder-layout">
+          <div class="card founder-card">
+            <img src="assets/images/founder-photo.svg" alt="Portrait placeholder for PHYWIX founder" loading="lazy" />
+            <div class="card-body">
+              <p class="eyebrow">Founder</p>
+              <h3>Alex Moreno</h3>
+              <p>Developer, AI tinkerer, and educator focused on building useful tools that feel polished from the first click.</p>
+              <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:hello@phywix.com"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="glass-panel about-card">
+            <p class="eyebrow">Skills & Education</p>
+            <div class="skill-list">
+              <span>Product Engineering</span>
+              <span>Machine Learning</span>
+              <span>Data Systems</span>
+              <span>Technical Education</span>
+            </div>
+            <p>Graduate in Computer Science and former product engineer at growth-focused software teams.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Journey Timeline</p>
+          <h2>A path shaped by experiments, product work, and teaching.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>2019</h3>
+            <p>Started building automation tools and internal analytics systems for early-stage product teams.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2022</h3>
+            <p>Expanded into machine learning and applied AI with a focus on practical product outcomes.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>2025</h3>
+            <p>Launched PHYWIX as a premium personal brand for software, AI, and education.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" data-reveal>
+        <div class="contact-grid">
+          <div class="glass-panel contact-card">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something thoughtful together.</h2>
+            <p>Whether it is a product concept, a learning initiative, or a collaboration, I am always open to strong conversations.</p>
+          </div>
+          <form class="card contact-form" id="contactForm" novalidate>
+            <label>
+              Name
+              <input type="text" id="name" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" id="email" name="email" required />
+            </label>
+            <label>
+              Project Type
+              <input type="text" id="subject" name="subject" required />
+            </label>
+            <label>
+              Message
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> PHYWIX. Crafted for ambitious builders.</p>
+      <div class="footer-links"><a href="projects.html">Projects</a><a href="knowledge.html">Knowledge</a><a href="about.html">About</a></div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>

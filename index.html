@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PHYWIX is a premium technology brand building AI, software, and learning experiences for modern teams and builders."
+    />
+    <meta name="theme-color" content="#050816" />
+    <title>PHYWIX — Building AI, Software & Learning Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+      <div class="loading-shell">
+        <div class="loading-orb"></div>
+        <p>Initializing PHYWIX experience</p>
+      </div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="PHYWIX home">
+        <span class="brand-mark"></span>
+        <span>PHYWIX</span>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Project Hub</a>
+        <a href="knowledge.html">Knowledge Hub</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <button class="icon-button theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy reveal" data-reveal>
+          <p class="eyebrow">AI • Software • Education</p>
+          <h1>Building AI, Software & Learning Resources</h1>
+          <p class="hero-text">
+            PHYWIX blends product thinking, machine learning craft, and practical education into a premium digital brand for builders who want to ship smarter.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="button button-primary">Explore Projects</a>
+            <a href="knowledge.html" class="button button-secondary">Open Knowledge Hub</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <strong data-counter="18">0</strong>
+              <span>builds shipped</span>
+            </div>
+            <div>
+              <strong data-counter="120">0</strong>
+              <span>articles published</span>
+            </div>
+            <div>
+              <strong data-counter="8">0</strong>
+              <span>years of learning</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-reveal>
+          <div class="orbital-card">
+            <img src="assets/images/hero-illustration.svg" alt="Futuristic dashboard illustration" loading="eager" />
+          </div>
+        </div>
+      </section>
+
+      <section class="glass-panel intro-panel section reveal" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">About PHYWIX</p>
+          <h2>A personal technology brand engineered for product-minded builders.</h2>
+        </div>
+        <div class="intro-grid">
+          <p>
+            PHYWIX is a modern studio for designing AI-native tools, crafting dependable software, and turning technical knowledge into high-value learning experiences.
+          </p>
+          <p>
+            Every project is guided by clarity, systems thinking, and a deep respect for the people who use the work. The result is a brand that feels as polished as the products it creates.
+          </p>
+        </div>
+      </section>
+
+      <section class="section reveal" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Featured Builds</p>
+          <h2>Selected systems, experiments, and product experiences.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="card project-card tilt-card">
+            <img src="assets/images/project-voice.svg" alt="Voice analysis assistant dashboard" loading="lazy" />
+            <div class="card-body">
+              <div class="card-meta"><span class="badge badge-ai">AI</span><span class="status live">Live</span></div>
+              <h3>SignalPilot</h3>
+              <p>Real-time voice insight layers for conversation coaching and product feedback.</p>
+              <div class="tag-list"><span>Python</span><span>ML</span><span>FastAPI</span></div>
+            </div>
+          </article>
+          <article class="card project-card tilt-card">
+            <img src="assets/images/project-data.svg" alt="Analytics workspace interface" loading="lazy" />
+            <div class="card-body">
+              <div class="card-meta"><span class="badge badge-data">Database</span><span class="status beta">Beta</span></div>
+              <h3>LedgerOS</h3>
+              <p>A multi-tenant observability layer blending SQL pipelines, dashboards, and alerts.</p>
+              <div class="tag-list"><span>SQL</span><span>Oracle</span><span>Node</span></div>
+            </div>
+          </article>
+          <article class="card project-card tilt-card">
+            <img src="assets/images/project-app.svg" alt="SaaS web app dashboard" loading="lazy" />
+            <div class="card-body">
+              <div class="card-meta"><span class="badge badge-web">Web</span><span class="status shipped">Shipped</span></div>
+              <h3>Northstar Studio</h3>
+              <p>Elegant workflow automation for product teams running rapid experiments.</p>
+              <div class="tag-list"><span>JavaScript</span><span>CSS</span><span>APIs</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Latest Tutorials</p>
+          <h2>High-signal content for technical growth.</h2>
+        </div>
+        <div class="article-grid">
+          <article class="card article-card">
+            <div class="article-top">
+              <span class="badge badge-python">Python</span>
+              <span>8 min read</span>
+            </div>
+            <h3>Designing reliable prediction pipelines with scikit-learn.</h3>
+            <p>Structure your first production-ready machine learning workflow with evaluation and monitoring.</p>
+            <a href="knowledge.html" class="text-link">Read article</a>
+          </article>
+          <article class="card article-card">
+            <div class="article-top">
+              <span class="badge badge-db">SQL</span>
+              <span>6 min read</span>
+            </div>
+            <h3>Query patterns that scale from prototype to platform.</h3>
+            <p>Learn how to write SQL that stays readable, performant, and maintainable.</p>
+            <a href="knowledge.html" class="text-link">Read article</a>
+          </article>
+          <article class="card article-card">
+            <div class="article-top">
+              <span class="badge badge-ai">AI</span>
+              <span>5 min read</span>
+            </div>
+            <h3>Building a local knowledge assistant with embeddings.</h3>
+            <p>Turn documentation into searchable, context-rich experiences with open-source components.</p>
+            <a href="knowledge.html" class="text-link">Read article</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" data-reveal>
+        <div class="section-heading">
+          <p class="eyebrow">Technologies</p>
+          <h2>Core tools in the PHYWIX operating stack.</h2>
+        </div>
+        <div class="tech-grid">
+          <div class="skill-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+          <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="skill-card"><i class="fa-solid fa-database"></i><span>SQL</span></div>
+          <div class="skill-card"><i class="fa-solid fa-server"></i><span>Oracle</span></div>
+          <div class="skill-card"><i class="fa-solid fa-robot"></i><span>Machine Learning</span></div>
+          <div class="skill-card"><i class="fa-solid fa-brain"></i><span>AI</span></div>
+          <div class="skill-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+          <div class="skill-card"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+          <div class="skill-card"><i class="fa-solid fa-chart-line"></i><span>Statistics</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> PHYWIX. Crafted for ambitious builders.</p>
+      <div class="footer-links">
+        <a href="projects.html">Projects</a>
+        <a href="knowledge.html">Knowledge</a>
+        <a href="about.html">About</a>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>

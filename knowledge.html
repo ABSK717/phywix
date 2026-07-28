@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse tutorials, articles, roadmaps, and resources from PHYWIX." />
+    <title>PHYWIX — Knowledge Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+      <div class="loading-shell">
+        <div class="loading-orb"></div>
+        <p>Preparing learning library</p>
+      </div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark"></span><span>PHYWIX</span></a>
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Project Hub</a>
+        <a href="knowledge.html" class="active">Knowledge Hub</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="icon-button theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+    </header>
+
+    <main id="top">
+      <section class="page-hero section">
+        <div class="page-hero-copy reveal" data-reveal>
+          <p class="eyebrow">Knowledge Hub</p>
+          <h1>Premium learning resources for modern builders.</h1>
+          <p>From practical tutorials to roadmap-style thinking, this is where strategy meets execution.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" data-reveal>
+        <div class="knowledge-toolbar">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="knowledgeSearch" placeholder="Search tutorials, articles, and resources" aria-label="Search knowledge content" />
+          </div>
+          <div class="filter-bar compact" role="toolbar" aria-label="Knowledge filters">
+            <button class="filter-chip active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="blog">Blogs</button>
+            <button class="filter-chip" data-filter="tutorial">Tutorials</button>
+            <button class="filter-chip" data-filter="resource">Resources</button>
+            <button class="filter-chip" data-filter="roadmap">Roadmaps</button>
+            <button class="filter-chip" data-filter="cheatsheet">Cheat Sheets</button>
+            <button class="filter-chip" data-filter="snippet">Code Snippets</button>
+          </div>
+        </div>
+
+        <article class="featured-article card reveal" data-reveal>
+          <div class="featured-content">
+            <p class="eyebrow">Featured article</p>
+            <h2>How to build responsible AI workflows without sacrificing speed.</h2>
+            <p>Design practical quality gates, evaluation loops, and deployment habits that keep experimentation grounded in user impact.</p>
+            <div class="tag-list"><span>AI</span><span>Workflow</span><span>Strategy</span></div>
+          </div>
+          <div class="featured-meta">
+            <span>12 min read</span>
+            <span>Updated weekly</span>
+          </div>
+        </article>
+
+        <div class="article-grid" id="knowledgeGrid">
+          <article class="card article-card" data-category="tutorial" data-title="Reliable ML Pipelines" data-tags="python,ml,workflow">
+            <div class="article-top"><span class="badge badge-python">Tutorial</span><span>8 min read</span></div>
+            <h3>Designing reliable prediction pipelines with scikit-learn.</h3>
+            <p>Use reproducible evaluation loops and clear deployment checkpoints for product-grade machine learning.</p>
+            <div class="tag-list"><span>Python</span><span>ML</span></div>
+          </article>
+          <article class="card article-card" data-category="blog" data-title="SQL at Scale" data-tags="sql,database,performance">
+            <div class="article-top"><span class="badge badge-db">Blog</span><span>6 min read</span></div>
+            <h3>Query patterns that scale from prototype to platform.</h3>
+            <p>How to keep your SQL readable and performant as schemas and traffic grow.</p>
+            <div class="tag-list"><span>SQL</span><span>Database</span></div>
+          </article>
+          <article class="card article-card" data-category="resource" data-title="Open Source Toolkit" data-tags="ai,tools,resources">
+            <div class="article-top"><span class="badge badge-ai">Resource</span><span>5 min read</span></div>
+            <h3>A curated toolkit for shipping AI-native products.</h3>
+            <p>Recommended libraries, stacks, and templates for building faster without sacrificing clarity.</p>
+            <div class="tag-list"><span>AI</span><span>Tooling</span></div>
+          </article>
+          <article class="card article-card" data-category="roadmap" data-title="Learning Roadmap" data-tags="career,roadmap,product">
+            <div class="article-top"><span class="badge badge-web">Roadmap</span><span>11 min read</span></div>
+            <h3>From beginner to product-minded engineer in 90 days.</h3>
+            <p>A focused path for building fluency in software, analytics, and applied AI.</p>
+            <div class="tag-list"><span>Career</span><span>Roadmap</span></div>
+          </article>
+          <article class="card article-card" data-category="cheatsheet" data-title="Git Commands" data-tags="git,workflow,terminal">
+            <div class="article-top"><span class="badge badge-python">Cheat Sheet</span><span>3 min read</span></div>
+            <h3>Fast command reference for everyday product delivery.</h3>
+            <p>Keep your version control and release rituals lean, consistent, and dependable.</p>
+            <div class="tag-list"><span>Git</span><span>Workflow</span></div>
+          </article>
+          <article class="card article-card" data-category="snippet" data-title="Embeddings Snippet" data-tags="python,ai,snippet">
+            <div class="article-top"><span class="badge badge-ai">Code Snippet</span><span>4 min read</span></div>
+            <h3>A lightweight embedding workflow for local knowledge search.</h3>
+            <p>Prototype retrieval experiences quickly using sentence-transformers and a small index.</p>
+            <div class="tag-list"><span>Python</span><span>AI</span></div>
+          </article>
+        </div>
+
+        <div class="pagination" id="pagination" aria-label="Content pagination"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> PHYWIX. Crafted for ambitious builders.</p>
+      <div class="footer-links"><a href="projects.html">Projects</a><a href="knowledge.html">Knowledge</a><a href="about.html">About</a></div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/knowledge.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+.tilt-card:hover {
+  transform: translateY(-8px) rotateX(4deg) rotateY(-4deg);
+  transition: transform .3s ease;
+}
+
+.magnetic:hover {
+  transform: translateY(-3px) scale(1.01);
+}
+
+.floating { animation: float 4s ease-in-out infinite; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0, transparent 60%);
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+}
+.ripple:active:after {
+  animation: ripple .5s ease-out;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
